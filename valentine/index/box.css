@@ -1,0 +1,111 @@
+Body {
+    text-align: center;
+    background: #ffe6e6;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    color: #ff4d4d;
+    margin-top: 50px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #ff9999;
+}
+
+.gift-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #ff6666;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.lid {
+    position: absolute;
+    top: -30px;
+    width: 150px;
+    height: 30px;
+    background: #ff3333;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.5s;
+}
+
+.ribbon-vertical {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 150px;
+    background: #ffffff;
+    transform: translateY(-50%);
+}
+
+.ribbon-horizontal {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 150px;
+    height: 20px;
+    background: #ffffff;
+    transform: translateY(-50%);
+}
+
+.message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff4d4d;
+    animation: fadeIn 1s;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background: #e60000;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff4d4d;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: fall 12s linear infinite;
+    z-index: 10;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(500px) rotate(360deg);
+    }
+}

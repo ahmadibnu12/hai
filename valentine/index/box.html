@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine Day</title>
+    <link rel="stylesheet" href="box.css">
+</head>
+<body>
+
+    <h1 class="title">Digital Gift Box</h1>
+    <div class="gift-container" onclick="openGift()">
+       <div class="box">
+           <div class="lid" id="lid"></div>
+           <div class="ribbon-vertical"></div>
+           <div class="ribbon-horizontal"></div>
+           <div class="body"></div>
+       </div>
+    </div>
+
+    <div class="message" id="surpriseMessage">
+        <h2>Happy Valentine!</h2>
+        <p>Semoga harimu penuh cinta dan kebahagiaan</p>
+    </div>
+
+    <div class="button-container">
+        <button class="back-button" onclick="goBack()">Kembali</button>
+    </div>
+
+    <script src="box.js"></script>
+    
+</body>
+</html>
